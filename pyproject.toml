@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "atoti-var-shaking-clouds"
+version = "0.1.0"
+description = ""
+authors = ["Olivier Peyrusse <ope@activeviam.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.scripts]
+atoti = "hackathon.main:paas_main"
+local-atoti = "hackathon.main:local_main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
