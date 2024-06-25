@@ -13,13 +13,13 @@ class _Environment:
             raise ValueError(f"Missing environment variable: {env_var}")
         return value
 
-    @cached_property
-    def private_key_id(self):
-        return self.get_env_or_throw(_PRIVATE_KEY_ID)
+    # @cached_property
+    # def private_key_id(self):
+    #     return self.get_env_or_throw(_PRIVATE_KEY_ID)
 
-    @cached_property
-    def private_key(self):
-        return self.get_env_or_throw(_PRIVATE_KEY)
+    # @cached_property
+    # def private_key(self):
+    #     return self.get_env_or_throw(_PRIVATE_KEY)
 
 
 env = _Environment()
